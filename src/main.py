@@ -1,13 +1,12 @@
 from sg import *
 from getImage import *
 from createKey import *
-from createVolumes import *
+# from createVolumes import *
 import yaml
 import boto3
 from sys import argv
 import pdb
 
-#ssh-keygen -f mykey
 # Read yaml file
 def readFile(filename):
     try:
@@ -92,27 +91,14 @@ def buildInfra(config, ami, sg, key):
         ],
     )
 
-    # instance.wait_until_running()
-    # instance.load()
-    # print(instance.public_dns_name)
-    # client.attach_volume(
-    #     Device='dev/xvda',
-    #     InstanceId=instance['InstanceId'],
-    #     VolumeId='vol-086fb3afff955375a',
-    # )
 
 
 script, yamlFile = argv
-
-# buildInfra("nothing")
-
-# getImageId(params)
 
 config = readFile(yamlFile)
 ami = getImageId(config)
 sg = buildSG()
 key = createKey()
-# vols = createVolumes(config)
 
 buildInfra(config, ami, sg, key)
 
