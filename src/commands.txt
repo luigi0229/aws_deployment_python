@@ -1,0 +1,8 @@
+
+# get the public key of an ssh key
+ssh-keygen -y -f key.pub
+
+# to allow users to ssh into an instance
+# create a .ssh/authorized_keys file on the
+# home directory of the user, and add the public key
+# sudo echo 'AllowUsers user1 user2' >> /etc/ssh/sshd_config
