@@ -22,7 +22,7 @@ def buildInfra(config, ami, sg, key):
     user_data = '''#!/bin/bash
         sudo useradd -p user1pw user1
         sudo useradd -p user1pw user2
-        sudo echo 'AllowUsers user1 user2' >> /etc/ssh/sshd_config
+        sudo echo 'AllowUsers user1 user2 ec2-user' >> /etc/ssh/sshd_config
         sudo echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
         sudo restart ssh
         sudo mkdir /data
