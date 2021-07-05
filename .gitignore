@@ -2,3 +2,4 @@
 *.pyc
 *.pem
 *.pub
+*.DS_Store
