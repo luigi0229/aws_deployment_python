@@ -1,7 +1,5 @@
 # AWS Instance Deployment using Python and Boto3
 
-ONLY TESTED ON PYTHON 2.7 SO FAR!
-
 This repository contains the required python code to
 deploy an AWS EC2 instance using Python and Boto3.
 The code is designed to read from a YAML configuration file that
