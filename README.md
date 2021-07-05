@@ -43,6 +43,7 @@ deployment will use the yaml configuration to deploy the environment.
 ## Troubleshooting
 
   Manually delete already created resources everytime if you want to run the script multime times. If something fails on the deployment and you need to run it again, make sure that:
+
     * `k1.pem` file doesn't exist in current directory
     * `k1` keypair doesn't exist on AWS.
-    * `allow_ssh_in` security group doesn't exist. 
+    * `allow_ssh_in` security group doesn't exist.
