@@ -15,7 +15,7 @@ deployment will use the yaml configuration to deploy the environment.
   * Create an key that will be used for SSH for each of the two
   users on the configuration. To create a new key, use command below:
 
-    ssh-keygen -f keyname
+      ssh-keygen -f keyname
 
   * Follow the prompts. This will generate a new key with name
   'keyname' and a corresponding public key 'keyname.pub'
