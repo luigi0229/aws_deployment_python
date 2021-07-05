@@ -12,10 +12,8 @@ deployment will use the yaml configuration to deploy the environment.
 
   * Python installed, with required dependencies
 
-  * Create an key that will be used for SSH for each of the two
-  users on the configuration. To create a new key, use command below:
-
-      ssh-keygen -f keyname
+  * A key that will be used for SSH for each of the two
+  users on the configuration. To create a new key on an Unix environment, use command `ssh-keygen -f keyname.pem` where keyname.pem is the name of your key
 
   * Follow the prompts. This will generate a new key with name
   'keyname' and a corresponding public key 'keyname.pub'
